@@ -435,7 +435,7 @@ tbody tr:hover {
     padding: 16px;
   }
   .parametres {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
   }
   .total-conso {

@@ -21,7 +21,8 @@
   --danger-clair: #db7575;
 
   /* Neutres */
-  --fond: #f5f7fa;
+  /* --fond: #f5f7fa; */
+  --fond: #577096;
   --carte: #ffffff;
   --bord: #e2e8f0;
   --bord-fort: #cbd5e1;
@@ -420,16 +421,10 @@ tbody tr:hover {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     padding: 12px;
     font-size: 14px;
-  }
-  .entete {
-    padding: 18px;
-  }
-  .entete h1 {
-    font-size: 1.1rem;
   }
   .carte {
     padding: 16px;

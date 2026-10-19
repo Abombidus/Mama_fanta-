@@ -58,6 +58,100 @@ body {
   gap: 16px;
 }
 
+/* ===== CARTES ===== */
+.carte {
+  background: var(--carte);
+  border-radius: var(--rayon);
+  border: 1px solid var(--bord);
+  box-shadow: var(--ombre);
+  padding: 20px 22px;
+}
+.carte h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--marine);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.01em;
+}
+.carte h2::before {
+  content: "";
+  width: 3px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.carte.reco {
+  background: var(--succes-clair);
+  border-color: #a7f3d0;
+}
+.carte.reco h2 {
+  color: var(--succes);
+}
+.carte.reco h2::before {
+  background: var(--succes);
+}
+.carte.reco strong {
+  color: var(--succes);
+  font-weight: 700;
+}
+
+/* ===== ÉQUIPEMENTS ===== */
+.equipement {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: start;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--bord);
+}
+.equipement:last-of-type {
+  border-bottom: none;
+}
+
+.equipement-nom {
+  font-weight: 600;
+  border: 1px solid var(--bord);
+  background: white;
+  border-radius: var(--rayon-sm);
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  width: 100%;
+  color: var(--texte);
+}
+.equipement-nom:focus {
+  outline: none;
+  border-color: var(--marine);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+}
+
+.equipement-champs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--texte-doux);
+}
+.equipement-champs input {
+  width: 62px;
+  padding: 5px 8px;
+  border: 1px solid var(--bord-fort);
+  border-radius: var(--rayon-sm);
+  font-size: 0.82rem;
+  color: var(--texte);
+  background: white;
+}
+.equipement-champs input:focus {
+  outline: none;
+  border-color: var(--marine);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+}
+
 /* ===== CONSOMMATION ===== */
 .total-conso {
   font-size: 1.5rem;

@@ -1,5 +1,5 @@
 /* ===== CARTES ===== */
-.carte {
+/* .carte {
   background: var(--carte);
   border-radius: var(--rayon);
   border: 1px solid var(--bord);
@@ -40,7 +40,7 @@
 }
 
 /* ===== ÉQUIPEMENTS ===== */
-.equipement {
+/* .equipement {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 10px;
@@ -85,9 +85,9 @@
   font-size: 0.82rem;
   color: var(--texte);
   background: white;
-}
-.equipement-champs input:focus {
+} */
+/* .equipement-champs input:focus {
   outline: none;
   border-color: var(--marine);
   box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
-}
+} */

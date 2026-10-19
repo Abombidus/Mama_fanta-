@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Icône bleue avec symbole blanc</title>
+  <desc id="desc">Icône carrée arrondie bleue avec un symbole stylisé blanc au centre.</desc>
+  <defs>
+    <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0757d8"/>
+      <stop offset=".48" stop-color="#1765ee"/>
+      <stop offset="1" stop-color="#0640b5"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07318d"/>
+      <stop offset=".45" stop-color="#001b61"/>
+      <stop offset="1" stop-color="#000d3e"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".26"/>
+      <stop offset=".55" stop-color="#ffffff" stop-opacity=".03"/>
+      <stop offset="1" stop-color="#001b75" stop-opacity=".2"/>
+    </linearGradient>
+    <linearGradient id="symbol" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".72" stop-color="#f6f7fc"/>
+      <stop offset="1" stop-color="#b9c2d8"/>
+    </linearGradient>
+  </defs>
+  <!-- Deep extruded lower edge -->
+  <path d="M100 104 Q111 65 155 65 H354 Q405 65 420 112 L450 349 Q457 407 416 430 L371 454 Q354 463 326 463 H155 Q107 463 95 417 L66 177 Q61 137 100 104Z" fill="url(#side)"/>
+  <!-- Front face -->
+  <path d="M145 35 H350 Q399 35 412 84 L448 329 Q456 382 406 391 Q391 395 365 395 H151 Q104 395 97 347 L67 119 Q60 68 108 43 Q124 35 145 35Z" fill="url(#face)" stroke="#0b2d86" stroke-width="2"/>
+  <path d="M145 35 H350 Q399 35 412 84 L448 329 Q456 382 406 391 Q391 395 365 395 H151 Q104 395 97 347 L67 119 Q60 68 108 43 Q124 35 145 35Z" fill="url(#shine)"/>
+  <!-- Stylized App Store-like drawing mark -->
+  <g fill="none" stroke="url(#symbol)" stroke-width="25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M173 239 H357"/>
+    <path d="M211 239 L254 135"/>
+    <path d="M275 151 L337 253"/>
+    <path d="M267 135 L242 107"/>
+    <path d="M267 135 L286 107"/>
+  </g>
+  <path d="M245 106 C229 88 211 100 222 117 L244 141 L267 135 L286 113 C298 96 277 87 265 104 L257 115Z" fill="url(#symbol)"/>
+  <path d="M192 275 Q201 264 214 270 L225 275 L213 302 Q208 312 198 306 Q187 301 192 289Z" fill="url(#symbol)"/>
+  <path d="M319 239 H365 Q377 239 377 251 Q377 263 365 263 H332Z" fill="url(#symbol)"/>
+</svg>

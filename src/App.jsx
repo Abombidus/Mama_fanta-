@@ -69,7 +69,7 @@ export default function App() {
   const Y = (c) => H - (c / maxC) * H;
 
   useEffect(() => {
-    alert("Jai mes suggestion sont dans le fichier README.md");
+    alert("Mes Suggestion sont dans le fichier README.md");
   }, []);
 
   return (

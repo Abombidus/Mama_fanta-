@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect, useContext } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 import { Parameters } from "./info/Data.jsx";
 import {
@@ -9,15 +10,16 @@ import {
 import { simuler1000Annees } from "./Components/utils/Resultat.jsx";
 import { formatFCFA } from "./Components/utils/Format.jsx";
 
+import { AppContext } from "./context/AppContext.jsx";
 import Header from "./Components/header/Header.jsx";
-import Recommendation from "./Components/recommendation/Recommendation.jsx";
 import Equipement from "./Components/equipement/Equipement.jsx";
 import Parametres from "./Components/parametres/Parametres.jsx";
 import Consommation from "./Components/consommation/Consommation.jsx";
-import { AppContext } from "./context/AppContext.jsx";
 import Comparaison from "./Components/comparaison/Comparaison.jsx";
 import Graphique from "./Components/graphique/Graphique.jsx";
 import Simulation from "./Components/simulation/Simulation.jsx";
+import Recommendation from "./Components/recommendation/Recommendation.jsx";
+import Footer from "./Components/footer/Footer.jsx";
 
 export default function App() {
   const outils = useContext(AppContext);
@@ -32,12 +34,26 @@ export default function App() {
   );
   const bascule = useMemo(() => pointBascule(options, p), [options, p]);
 
+  //Notification Action
+  const notify = () =>
+    toast.warning("Mes Suggestions sont dans le fichier README.md!", {
+      style: {
+        background: "#ca6c1f",
+        color: "white",
+        fontSize: "1.5rem",
+        width: "100%",
+        textAlign: "center",
+        padding: "2.5rem",
+      },
+    });
+
   useEffect(() => {
-    alert("Mes Suggestion sont dans le fichier README.md");
+    notify();
   }, []);
 
   return (
     <div className="app">
+      <ToastContainer position="top-center" autoClose={5000} />
       <Header />
       <Equipement appareils={appareils} setAppareils={setAppareils} />
       <Parametres p={p} setP={setP} />
@@ -50,7 +66,6 @@ export default function App() {
         bascule={bascule}
       />
       <Graphique coutCumule={coutCumule} options={options} p={p} />
-      {/* SIMULATION */}
       <Simulation
         sim={sim}
         setSim={setSim}
@@ -61,6 +76,7 @@ export default function App() {
         simuler1000Annees={simuler1000Annees}
       />
       <Recommendation bascule={bascule} />
+      <Footer />
     </div>
   );
 }

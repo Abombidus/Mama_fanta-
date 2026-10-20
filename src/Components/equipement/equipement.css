@@ -52,18 +52,20 @@
 }
 
 .btn-suppr {
-  background: var(--danger-clair);
-  color: var(--danger);
+  background: var(--danger);
+  color: white;
+  border: 1px solid transparent;
   border-radius: var(--rayon-sm);
-  padding: 7px 11px;
+  padding: 4px 8px;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 1.3rem;
   font-weight: 500;
   transition: 0.15s ease-in;
 }
 
 .btn-suppr:hover {
-  background: #fee2e2;
+  background: #b88d8d;
+  color: black;
 }
 
 .btn-ajout {

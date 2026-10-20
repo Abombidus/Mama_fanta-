@@ -1,4 +1,5 @@
 import "./equipement.css";
+import { MdDeleteForever } from "react-icons/md";
 
 function Equipement({ appareils, setAppareils }) {
   const majAppareil = (i, champ, val) => {
@@ -58,7 +59,7 @@ function Equipement({ appareils, setAppareils }) {
               </div>
             </div>
             <button className="btn-suppr" onClick={() => supprimer(i)}>
-              🗑
+              <MdDeleteForever />
             </button>
           </div>
         ))}

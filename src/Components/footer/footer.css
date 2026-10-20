@@ -1,0 +1,54 @@
+/* ===== FOOTER ===== */
+footer {
+  font-size: x-large;
+  text-align: center;
+  /* color: white; */
+  display: grid;
+}
+
+footer img {
+  width: 20%;
+  border-radius: 0.7rem;
+}
+
+.footer > p {
+  font-weight: bold;
+}
+
+.link {
+  width: 70%;
+  padding: 1rem;
+  gap: 5px;
+}
+
+.links a {
+  margin-right: 1rem;
+  font-size: 35px;
+}
+.links .mail {
+  color: var(--danger);
+}
+
+.links .facebook {
+  color: var(--facebook);
+}
+
+.links .whatsapp {
+  color: var(--whatsapp);
+}
+
+.links .twitter {
+  color: var(--x-twitter);
+}
+
+@media (max-width: 700px) {
+  footer img {
+    width: 40%;
+  }
+  P {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}

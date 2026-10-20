@@ -1,0 +1,86 @@
+/* ===== SIMULATION ===== */
+.sim-controls {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.sim-controls .champ {
+  flex: 0 0 auto;
+}
+.sim-controls input {
+  width: 90px;
+}
+
+.btn-simuler {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--rayon-sm);
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.88rem;
+  transition: 0.15s ease-in;
+}
+.btn-simuler:hover {
+  background: #b45309;
+}
+
+.sim-resultats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sim-ligne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border-radius: var(--rayon-sm);
+  border: 1px solid var(--bord);
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+.sim-ligne strong {
+  color: var(--texte);
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.sim-ligne:last-child {
+  background: var(--succes-clair);
+  border-color: #a7f3d0;
+}
+.sim-ligne:last-child strong {
+  color: var(--succes);
+}
+
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--texte-doux);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.champ input {
+  padding: 9px 11px;
+  border: 1px solid var(--bord-fort);
+  border-radius: var(--rayon-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--texte);
+  background: white;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.champ input:focus {
+  outline: none;
+  border-color: var(--marine);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+}

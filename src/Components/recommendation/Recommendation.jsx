@@ -1,3 +1,4 @@
+import "./recommendation.css";
 function Recommendation({ bascule }) {
   return (
     <div>

@@ -1,0 +1,31 @@
+/* ===== GRAPHIQUE ===== */
+.graphique {
+  background: #f8fafc;
+  border-radius: var(--rayon-sm);
+  padding: 12px;
+  border: 1px solid var(--bord);
+}
+.graphique svg {
+  display: block;
+}
+
+.legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 14px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--texte-doux);
+}
+.legende span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.legende .pastille {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}

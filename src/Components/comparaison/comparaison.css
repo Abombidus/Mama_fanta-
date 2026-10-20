@@ -1,0 +1,55 @@
+/* ===== Comparaison ===== */
+.tableau-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--bord);
+  border-radius: var(--rayon-sm);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.83rem;
+  min-width: 540px;
+}
+thead th {
+  background: var(--marine);
+  color: white;
+  text-align: left;
+  padding: 11px 12px;
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+tbody td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--bord);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--texte);
+}
+tbody td:first-child {
+  font-weight: 600;
+  color: var(--marine);
+}
+tbody tr:last-child td {
+  border-bottom: none;
+}
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.note-bascule {
+  margin-top: 14px;
+  padding: 11px 14px;
+  background: var(--accent-clair);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--rayon-sm);
+  font-size: 0.86rem;
+  color: #78350f;
+  font-weight: 500;
+}
+.note-bascule strong {
+  color: #451a03;
+}

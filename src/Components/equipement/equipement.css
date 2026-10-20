@@ -1,46 +1,5 @@
-/* ===== CARTES ===== */
-/* .carte {
-  background: var(--carte);
-  border-radius: var(--rayon);
-  border: 1px solid var(--bord);
-  box-shadow: var(--ombre);
-  padding: 20px 22px;
-}
-.carte h2 {
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-  color: var(--marine);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  letter-spacing: -0.01em;
-}
-.carte h2::before {
-  content: "";
-  width: 3px;
-  height: 16px;
-  background: var(--accent);
-  border-radius: 2px;
-}
-
-.carte.reco {
-  background: var(--succes-clair);
-  border-color: #a7f3d0;
-}
-.carte.reco h2 {
-  color: var(--succes);
-}
-.carte.reco h2::before {
-  background: var(--succes);
-}
-.carte.reco strong {
-  color: var(--succes);
-  font-weight: 700;
-}
-
-/* ===== ÉQUIPEMENTS ===== */
-/* .equipement {
+/* ===== EQUIPEMENTS ===== */
+.equipement {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 10px;
@@ -85,9 +44,39 @@
   font-size: 0.82rem;
   color: var(--texte);
   background: white;
-} */
-/* .equipement-champs input:focus {
+}
+.equipement-champs input:focus {
   outline: none;
   border-color: var(--marine);
   box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
-} */
+}
+
+.btn-suppr {
+  background: var(--danger-clair);
+  color: var(--danger);
+  border-radius: var(--rayon-sm);
+  padding: 7px 11px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: 0.15s ease-in;
+}
+
+.btn-suppr:hover {
+  background: #fee2e2;
+}
+
+.btn-ajout {
+  margin-top: 14px;
+  background: var(--marine);
+  color: white;
+  border: 2px solid transparent;
+  border-radius: var(--rayon-sm);
+  padding: 9px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.btn-ajout:hover {
+  background: var(--marine-fonce);
+}

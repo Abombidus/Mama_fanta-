@@ -1,0 +1,15 @@
+/* ===== RECOMMENDATION ===== */
+.carte.reco {
+  background: var(--succes-clair);
+  border-color: #a7f3d0;
+}
+.carte.reco h2 {
+  color: var(--succes);
+}
+.carte.reco h2::before {
+  background: var(--succes);
+}
+.carte.reco strong {
+  color: var(--succes);
+  font-weight: 700;
+}

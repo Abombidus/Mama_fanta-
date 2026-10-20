@@ -1,10 +1,6 @@
-import { useState } from "react";
-import { Devices } from "../../info/Data";
-import "./carte.css";
+import "./equipement.css";
 
-function Carte() {
-  const [appareils, setAppareils] = useState(Devices);
-
+function Equipement({ appareils, setAppareils }) {
   const majAppareil = (i, champ, val) => {
     const copie = [...appareils];
     copie[i] = { ...copie[i], [champ]: val };
@@ -74,4 +70,4 @@ function Carte() {
   );
 }
 
-export default Carte;
+export default Equipement;

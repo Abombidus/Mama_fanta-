@@ -1,9 +1,11 @@
+/* ===== RESET STYLES ===== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* ===== CSS VARIABLE ===== */
 :root {
   /* Marque */
   --marine: #1e3a5f;
@@ -39,6 +41,7 @@
   --ombre: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
+/* ===== GENERAL STYLE ===== */
 body {
   font-family:
     "Segoe UI" "Helvetica Neue",
@@ -59,7 +62,7 @@ body {
   gap: 16px;
 }
 
-/* ===== CARTES ===== */
+/* ===== GENERAL CARTES STYLE===== */
 .carte {
   background: var(--carte);
   border-radius: var(--rayon);
@@ -85,134 +88,7 @@ body {
   border-radius: 2px;
 }
 
-.carte.reco {
-  background: var(--succes-clair);
-  border-color: #a7f3d0;
-}
-.carte.reco h2 {
-  color: var(--succes);
-}
-.carte.reco h2::before {
-  background: var(--succes);
-}
-.carte.reco strong {
-  color: var(--succes);
-  font-weight: 700;
-}
-
-/* ===== ÉQUIPEMENTS ===== */
-.equipement {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px;
-  align-items: start;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--bord);
-}
-.equipement:last-of-type {
-  border-bottom: none;
-}
-
-.equipement-nom {
-  font-weight: 600;
-  border: 1px solid var(--bord);
-  background: white;
-  border-radius: var(--rayon-sm);
-  padding: 8px 10px;
-  font-size: 0.9rem;
-  width: 100%;
-  color: var(--texte);
-}
-.equipement-nom:focus {
-  outline: none;
-  border-color: var(--marine);
-  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
-}
-
-.equipement-champs {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-top: 8px;
-  font-size: 0.78rem;
-  color: var(--texte-doux);
-}
-.equipement-champs input {
-  width: 62px;
-  padding: 5px 8px;
-  border: 1px solid var(--bord-fort);
-  border-radius: var(--rayon-sm);
-  font-size: 0.82rem;
-  color: var(--texte);
-  background: white;
-}
-.equipement-champs input:focus {
-  outline: none;
-  border-color: var(--marine);
-  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
-}
-
-/* ===== CONSOMMATION ===== */
-.total-conso {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 18px;
-  color: var(--marine);
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-}
-.total-conso small {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--texte-doux);
-}
-
-.repartition {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.repartition-ligne {
-  font-size: 0.85rem;
-}
-.repartition-ligne .haut {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-.repartition-ligne .haut span:last-child {
-  color: var(--texte-doux);
-  font-variant-numeric: tabular-nums;
-}
-.barre {
-  height: 8px;
-  background: var(--bord);
-  border-radius: 4px;
-  overflow: hidden;
-}
-.barre > div {
-  height: 100%;
-  background: var(--marine);
-  border-radius: 4px;
-  transition: width 0.4s ease;
-}
-
-.btn-suppr {
-  background: var(--danger-clair);
-  color: var(--danger);
-  /* border: 1px solid #dd5454; */
-  border-radius: var(--rayon-sm);
-  padding: 7px 11px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: 0.15s ease-in;
-}
-
+/* ===== GENERAL BUTTON STYLE ===== */
 button {
   box-shadow: 2px 4px 3px gray;
   border: 1px solid transparent;
@@ -220,204 +96,6 @@ button {
 button:active {
   box-shadow: none;
   transform: translateY(5px);
-}
-.btn-suppr:hover {
-  background: #fee2e2;
-}
-
-.btn-ajout {
-  margin-top: 14px;
-  background: var(--marine);
-  color: white;
-  border: 2px solid transparent;
-  border-radius: var(--rayon-sm);
-  padding: 9px 16px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.85rem;
-}
-.btn-ajout:hover {
-  background: var(--marine-fonce);
-}
-
-/* ===== PARAMÈTRES ===== */
-.parametres {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 14px;
-}
-.champ {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--texte-doux);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-.champ input {
-  padding: 9px 11px;
-  border: 1px solid var(--bord-fort);
-  border-radius: var(--rayon-sm);
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--texte);
-  background: white;
-  text-transform: none;
-  letter-spacing: normal;
-}
-.champ input:focus {
-  outline: none;
-  border-color: var(--marine);
-  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
-}
-
-/* ===== TABLEAU ===== */
-.tableau-wrap {
-  overflow-x: auto;
-  border: 1px solid var(--bord);
-  border-radius: var(--rayon-sm);
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.83rem;
-  min-width: 540px;
-}
-thead th {
-  background: var(--marine);
-  color: white;
-  text-align: left;
-  padding: 11px 12px;
-  font-weight: 600;
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-}
-tbody td {
-  padding: 11px 12px;
-  border-bottom: 1px solid var(--bord);
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-  color: var(--texte);
-}
-tbody td:first-child {
-  font-weight: 600;
-  color: var(--marine);
-}
-tbody tr:last-child td {
-  border-bottom: none;
-}
-tbody tr:hover {
-  background: #f8fafc;
-}
-
-.note-bascule {
-  margin-top: 14px;
-  padding: 11px 14px;
-  background: var(--accent-clair);
-  border-left: 3px solid var(--accent);
-  border-radius: var(--rayon-sm);
-  font-size: 0.86rem;
-  color: #78350f;
-  font-weight: 500;
-}
-.note-bascule strong {
-  color: #451a03;
-}
-
-/* ===== GRAPHIQUE ===== */
-.graphique {
-  background: #f8fafc;
-  border-radius: var(--rayon-sm);
-  padding: 12px;
-  border: 1px solid var(--bord);
-}
-.graphique svg {
-  display: block;
-}
-
-.legende {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 14px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--texte-doux);
-}
-.legende span {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-.legende .pastille {
-  width: 12px;
-  height: 12px;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-/* ===== SIMULATION ===== */
-.sim-controls {
-  display: flex;
-  align-items: end;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-.sim-controls .champ {
-  flex: 0 0 auto;
-}
-.sim-controls input {
-  width: 90px;
-}
-
-.btn-simuler {
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: var(--rayon-sm);
-  padding: 10px 18px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 0.88rem;
-  transition: background 0.15s;
-}
-.btn-simuler:hover {
-  background: #b45309;
-}
-
-.sim-resultats {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.sim-ligne {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 14px;
-  background: #f8fafc;
-  border-radius: var(--rayon-sm);
-  border: 1px solid var(--bord);
-  font-size: 0.87rem;
-  font-weight: 500;
-}
-.sim-ligne strong {
-  color: var(--texte);
-  font-size: 0.95rem;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-}
-.sim-ligne:last-child {
-  background: var(--succes-clair);
-  border-color: #a7f3d0;
-}
-.sim-ligne:last-child strong {
-  color: var(--succes);
 }
 
 /* ===== RESPONSIVE ===== */

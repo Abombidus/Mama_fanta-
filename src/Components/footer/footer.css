@@ -25,6 +25,11 @@ footer img {
   margin-right: 1rem;
   font-size: 35px;
 }
+
+.links a:hover {
+  opacity: 0.7;
+}
+
 .links .mail {
   color: var(--danger);
 }
@@ -39,6 +44,10 @@ footer img {
 
 .links .twitter {
   color: var(--x-twitter);
+}
+
+.links .github {
+  color: var(--github);
 }
 
 @media (max-width: 700px) {

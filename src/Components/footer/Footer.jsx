@@ -2,6 +2,7 @@ import "./footer.css";
 import { IoIosMailOpen, IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import A from "../../assets/A.JPG";
 
 function Footer() {
@@ -24,6 +25,9 @@ function Footer() {
             </a>
             <a className="whatsapp" href="https://wa.me/237695833316">
               <IoLogoWhatsapp />
+            </a>
+            <a className="github" href="https://github.com/abombidus">
+              <FaGithub />
             </a>
           </div>
         </footer>

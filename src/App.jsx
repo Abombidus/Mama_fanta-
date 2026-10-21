@@ -36,16 +36,20 @@ export default function App() {
 
   //Notification Action
   const notify = () =>
-    toast.warning("Hello :) Welcome to Energie Wise!", {
-      style: {
-        background: "#ca6c1f",
-        color: "white",
-        fontSize: "1.5rem",
-        width: "100%",
-        textAlign: "center",
-        padding: "2.5rem",
+    toast.info(
+      "Hello 😊 Welcome to Energie Wise , Visualiser la consommation d'energie et améliorer votre efficacité énergétique!",
+      {
+        style: {
+          // background: "#ca6c1f",
+          background: "green",
+          color: "white",
+          fontSize: "1.5rem",
+          width: "100%",
+          textAlign: "center",
+          padding: "2.5rem",
+        },
       },
-    });
+    );
 
   useEffect(() => {
     notify();
@@ -53,7 +57,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <ToastContainer position="top-center" autoClose={5000} />
+      <ToastContainer position="top-center" autoClose={7000} />
       <Header />
       <Equipement appareils={appareils} setAppareils={setAppareils} />
       <Parametres p={p} setP={setP} />

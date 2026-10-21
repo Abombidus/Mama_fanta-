@@ -36,7 +36,7 @@ export default function App() {
 
   //Notification Action
   const notify = () =>
-    toast.warning("Les Suggestions sont dans le fichier README.md!", {
+    toast.warning("Hello :) Welcome to Energie Wise!", {
       style: {
         background: "#ca6c1f",
         color: "white",

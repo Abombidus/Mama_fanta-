@@ -3,10 +3,10 @@ function Header() {
   return (
     <>
       <header className="entete">
-        <h1>☀️ Lumière & Fraîcheur — Mama Fanta</h1>
+        <h1>☀️ Lumière & Fraîcheur —Abombidus</h1>
         <p>
           <span className="badge">Decision</span>
-          Boutique · Marché B · Bafoussam
+          Boutique · Marché n#· Mvog-Ada
         </p>
       </header>
     </>
